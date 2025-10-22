@@ -1,0 +1,62 @@
+/* inscricao.css */
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80') center/cover fixed no-repeat;
+  color: #fff;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+.wrap { width:100%; max-width:980px; }
+.card {
+  background: rgba(20,8,40,0.82);
+  padding:28px;
+  border-radius:16px;
+  width:420px;
+  margin: 0 auto;
+  box-shadow: 0 20px 60px rgba(11,6,28,0.6);
+  text-align:left;
+}
+.logo { width:56px; display:block; margin: 0 auto 8px; filter: drop-shadow(0 0 8px #00ffb3); }
+.card h1 { text-align:center; color:#00ffb3; margin:8px 0; }
+.lead { text-align:center; color:#c8a8ff; margin-bottom:16px; }
+
+.voltar { color:#c8a8ff; text-decoration:none; display:inline-block; margin-bottom:12px; }
+label { display:block; margin-top:12px; color:#c8a8ff; font-weight:600; }
+input, select, textarea {
+  width:100%;
+  padding:10px;
+  margin-top:6px;
+  border-radius:10px;
+  border:1px solid rgba(139,92,246,0.2);
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+}
+.inline { display:flex; gap:12px; }
+.inline > div { flex:1; }
+.radios { margin-top:12px; border:none; padding:0; color:#c8a8ff; }
+.radios label { display:inline-block; margin-right:8px; font-weight:500; }
+.botoes { display:flex; gap:10px; margin-top:16px; justify-content:space-between; }
+.primary {
+  flex:1;
+  background: linear-gradient(135deg,#7d2ae8,#00ffb3);
+  border:none; color:#fff; padding:10px; border-radius:10px; cursor:pointer; font-weight:700;
+  box-shadow: 0 10px 24px rgba(125,42,232,0.18);
+}
+.secundario {
+  flex:1;
+  background: rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.08);
+  color:#fff; padding:10px; border-radius:10px; cursor:pointer; font-weight:700;
+}
+.msg { margin-top:12px; text-align:center; color:#00ffb3; font-weight:700; }
+
+/* responsivo */
+@media (max-width:520px){
+  .card { width:92%; padding:18px; }
+  .inline { flex-direction:column; }
+}
